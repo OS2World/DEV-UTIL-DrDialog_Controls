@@ -1,0 +1,44 @@
+;                    (C) Chris Wohlgemuth 1999-2003
+#ifndef OS2_INCLUDED
+   #include <os2.h>
+#endif
+#include "drusrctl.h"
+
+DLGTEMPLATE IDDLG_DIRECTORY LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+    DIALOG  "Search directory", IDDLG_DIRECTORY, 147, 22, 204, 188, 
+            WS_VISIBLE | WS_SYNCPAINT, FCF_SYSMENU | FCF_TITLEBAR
+    BEGIN
+         ENTRYFIELD   "", 4096, 7, 170, 187, 9, ES_MARGIN
+
+        LTEXT           "File name:", 257, -1, -1, 4, 4, NOT WS_GROUP | NOT 
+                        WS_VISIBLE
+        ENTRYFIELD      "", 258, -2, -2, 4, 4, ES_MARGIN | NOT WS_VISIBLE
+        LTEXT           "Type:", 261, -2, -2, 4, 4, NOT WS_GROUP | NOT 
+                        WS_VISIBLE
+        AUTOCHECKBOX    "Write protected", 269, -2, -2, 4, 4, NOT 
+                        WS_TABSTOP | NOT WS_VISIBLE
+        CONTROL         "<All files>", 262, -2, -2, 4, 4, WC_COMBOBOX, 
+                        CBS_DROPDOWNLIST | WS_TABSTOP
+        LTEXT           "Drive:", 259, 5, 154, 70, 8, NOT WS_GROUP
+        LTEXT           "File:", 265, -2, -2, 4, 4, NOT WS_GROUP | NOT 
+                        WS_VISIBLE
+        CONTROL         "D:  [OS2]", 260, 5, 50, 191, 101, WC_COMBOBOX, 
+                        CBS_DROPDOWNLIST | WS_TABSTOP | WS_VISIBLE
+        LTEXT           "Directory:", 263, 4, 127, 60, 8, NOT WS_GROUP
+        LISTBOX         264, 5, 20, 191, 104, LS_OWNERDRAW | LS_HORZSCROLL
+        LISTBOX         266, 80, 1, 7, 7, LS_HORZSCROLL | NOT WS_VISIBLE
+        LTEXT           "", 270, -2, -2, 4, 4, NOT WS_GROUP | NOT WS_VISIBLE
+        DEFPUSHBUTTON   "OK", 1, 6, 2, 50, 14
+        PUSHBUTTON      "Cancel", 2, 64, 2, 50, 14, NOT 
+                        WS_TABSTOP
+        PUSHBUTTON      "Help", 267, 148, 2, 50, 14, BS_NOPOINTERFOCUS | 
+                        NOT WS_TABSTOP | NOT WS_VISIBLE
+        PUSHBUTTON      "", 268, 74, 0, 6, 14, NOT WS_TABSTOP
+        LISTBOX         3, 0, 0, 3, 2, NOT WS_TABSTOP | NOT 
+                        WS_VISIBLE
+;        LTEXT           "", 4096, 7, 165, 191, 18, DT_WORDBREAK
+    END
+END
+
+

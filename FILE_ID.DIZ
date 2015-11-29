@@ -1,0 +1,25 @@
+DrDialog-Controls V0.1.5 (BSD-freeware)
+(C) Chris Wohlgemuth 2001-2003
+http://www.geocities.com/SiliconValley/Sector/5785/
+http://www.os2world.com/cdwriting
+
+-Progressbar control for DrDialog with settable
+ colors, font and label.
+-Fly over help for DrDialog with settable colors,
+ font, delay etc.
+-Image control for DrDialog to display any image
+ file OS/2 can read. Additional selection function.
+-Direcory picker
+-Functions to change parent<->child relationship of
+ dialogs
+-Histogram control for imagefiles
+
+Source included.
+
+Requires:	OS/2, REXX, DrDialog
+
+License:
+This package is provided 'as is' for free with
+a BSD-style license.
+
+

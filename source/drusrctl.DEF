@@ -1,0 +1,16 @@
+LIBRARY drctl015 INITINSTANCE LONGNAMES
+PROTMODE
+DESCRIPTION 'User control for DRDialog - (c) Copyright Chris Wohlgemuth 2001-2003'
+DATA MULTIPLE NONSHARED
+STACKSIZE 32768
+EXPORTS
+     DRCTRLDROPFUNCS      = DRCtrlDropFuncs      @1
+     DRCTRLREGISTER       = DRCtrlRegister       @2
+     DRCTRLLOADFUNCS      = DRCtrlLoadFuncs      @3
+     DRCTRLVERSION        = DRCtrlVersion        @4
+     DRCTRLPICKDIRECTORY  = DRCtrlPickDirectory  @5
+     DRCTRLSETPARENT      = DRCtrlSetParent      @6
+     DRCTRLGETHWND        = DRCtrlGetHWND        @7
+     DRCTRLSETPARENTFROMHWND = DRCtrlSetParentFromHWND @8
+     DRCTRLGETHISTOGRAM      = DRCtrlGetHistogram        @9
+
